@@ -1,60 +1,71 @@
-## Getting started with a new training content repository
+# Claude Skills Course
 
-- Open the [course-starter-template](https://github.com/RedHatQuickCourses/course-starter-template)
+This repository contains an Antora-based training course for learning how to effectively use Claude Code and build custom skills.
 
-- Click on `Use This template` button and select `Create a new repository` option.
+## Course Structure
 
-![use-this-template.png](./images/use-this-template.png)
+This course is organized into three main modules:
 
-- On `Create a new repository` page, Select the options as highlighted in the below image and then click `Create repository` button at the bottom of the page.
+1. **Claude Basics** - Introduction to Claude Code fundamentals
+2. **Skill Building** - Creating and customizing Claude Code skills
+3. **Course Creation** - Developing training content with Claude
 
-![create-new-repo.png](./images/create-new-repo.png)
+## Quick Start
 
-- Clone this repository on your local system:
-```
-git clone git@github.com:RedHatQuickCourses/my-training-repository.git
-```
-NOTE: Use your repository url in the above command.
+### Prerequisites
+- Node.js 16 or later
+- npm
 
-- Go in to the course repository directory and initialize the course.
-``` 
-cd my-training-repository/
-sh course-init.sh --type bfx --lab demo
-```
-NOTE: If you are using Mac, use *zsh* in place of *sh* in the above command.
+### Development
 
-Sample output:
-```
-Initializing my-training-repository . . . done
-
-Please replace the specified strings in the files below and commit the changes before proceeding with the course development.
-antora.yml:title: REPLACE Course Title
+1. Clone this repository:
+```bash
+git clone <repository-url>
+cd pert-claude-skills
 ```
 
-- Edit the files prompted by course initialization script.
-
-- Commit the changes done by course initialization script and your manual edits.
-```
- git status 
- git add -A; git commit -m "course initialization"
- git push origin main 
+2. Install dependencies:
+```bash
+npm install
 ```
 
-- Browse your git repository url 
+3. Build the course:
+```bash
+npm run build
+```
 
-- On your github repo page, on left hand side pane, click on settings gear icon near `About` heading.
+4. Serve locally:
+```bash
+npm run serve
+```
 
-- Click `Use your GitHub Pages website` option to select (checked) it and then click `Save changes` button.
+The site will be available at http://localhost:8080
 
-![github-pages-setting](./images/github-pages-setting.png)
+### Development Workflow
 
-- You should now see the link to access the rendered content within that same block.
+For active development with auto-rebuild:
 
-![quickcourse-rendered-url](./images/quickcourse-rendered-url.png)
+```bash
+# Terminal 1 - watch for changes
+npm run watch:adoc
 
-FIXME: highlight the relevant area on images.
+# Terminal 2 - serve the site
+npm run serve
+```
+
+## Resources
+
+This repository includes:
+- **Custom Skills** - Located in `.agents/skills/`
+- **Prompts** - Reusable prompts in `prompts/`
+- **Templates** - Content templates in `templates/`
+
+## Publishing
+
+Pushes to the `main` branch automatically trigger a GitHub Actions workflow that builds and publishes the site to GitHub Pages.
 
 **SEE ALSO**
 
 - [Development using devspace](./DEVSPACE.md)
 - [Guideline for editing your content](./USAGEGUIDE.adoc)
+- [Claude.md](./CLAUDE.md) - Repository guidance for Claude Code
