@@ -3,101 +3,71 @@
 
 == Module Overview
 
-This module teaches you how to create complete Red Hat QuickCourses using Claude Code. You'll learn the proven 5-phase workflow that takes you from initial course design through publication for any Red Hat product or platform.
+In this final module, you'll apply everything you've learned from Modules 1 and 2 to create complete Red Hat QuickCourses using Claude Code. You'll learn the proven 5-phase workflow that takes you from initial course design through publication for any Red Hat product or platform.
+
+This is where your knowledge of Claude Code fundamentals and skill-building comes together in a real-world, production-ready workflow.
 
 == What You'll Learn
 
 By completing this module, you will be able to:
 
-* Design effective course structures for any Red Hat product
-* Use Claude Code skills to automate repository setup and content generation
+* Design effective course structures for any Red Hat product or technology
+* Apply Claude Code skills to automate repository setup and content generation
 * Create professional content with consistent depth and style
 * Request content from Claude using structured templates
-* Maintain terminology consistency across chapters
+* Maintain terminology consistency across multi-chapter courses
 * Work effectively across multiple Claude Code sessions
-* Write presentations, labs, and quizzes that match production quality
+* Write presentations, labs, and quizzes that match production quality standards
 * Export courses to PDF and publish to GitHub Pages
 
-== Applicable Technologies
+== Building on Previous Modules
 
-This workflow works for courses about any Red Hat product or platform:
+This module assumes you've completed **Modules 1 and 2** and are comfortable with:
 
-**Platforms**::
-OpenShift, Ansible Automation Platform, OpenStack, OpenShift AI, Satellite
+**From Module 1 (Claude Code Basics):**
 
-**Products**::
-RHEL, Identity Management, Red Hat Insights, Advanced Cluster Management
+* Working with Claude Code in your terminal and git repositories
+* Using skills effectively versus conversational prompts
+* Applying effective prompting techniques
 
-**Technologies**::
-Kubernetes, containers, virtualization, AI/ML, storage, networking, automation
+**From Module 2 (Skill Building):**
 
-**Solutions**::
-Hybrid cloud, edge computing, DevOps, security, GitOps
+* Understanding skill anatomy and structure
+* Designing sequential workflows
+* Managing token budgets and output control
+* Implementing quality gates and validation
 
-== Who This Is For
+You'll now apply these skills to real course development workflows.
 
-This module is designed for:
+== Applicable to Any Red Hat Technology
 
-* **Content developers** creating Red Hat enablement materials
-* **Subject matter experts** who need to convert knowledge into courses
-* **Technical instructors** building workshop content
-* **Solution architects** creating demonstration courses
-* **Anyone** responsible for Red Hat product training
+This workflow applies to courses about any Red Hat product or platform, including OpenShift, Ansible Automation Platform, RHEL, OpenShift AI, Kubernetes, containers, virtualization, AI/ML, hybrid cloud, edge computing, and more.
 
-== Prerequisites
-
-Before starting this module, you should have:
-
-* Completed the "Introduction to Claude Code" module (or equivalent experience)
-* Familiarity with git and GitHub
-* Basic understanding of AsciiDoc or Markdown
-* Subject matter expertise in the Red Hat product you'll teach
-* Access to the course-starter-template repository
-
-== The QuickCourse Advantage
-
-Traditional course development is time-consuming:
-
-* **Manual setup** - Configuring build systems, navigation, templates
-* **Repetitive structure** - Creating the same file patterns for each section
-* **Formatting overhead** - Writing AsciiDoc markup for every element
-* **Time to first draft** - Often 2-4 weeks for a basic course
-
-With the QuickCourse workflow and Claude Code:
-
-* **Automated setup** - Skills handle configuration
-* **Generated structure** - Complete skeleton from design document
-* **Claude-assisted writing** - Focus on content, not formatting
-* **Time to first draft** - As little as 1-2 weeks for a complete course
-
-== What's Covered
+== Sections in This Module
 
 This module provides a complete system for professional course creation:
 
-**1. The QuickCourse Generation Workflow**::
-Master the proven 5-phase workflow from setup through publication, applicable to any Red Hat product or platform. Learn design best practices, working with Claude Code skills, and publishing to GitHub Pages and PDF.
+**Section 1: The QuickCourse Generation Workflow**::
+Master the proven 5-phase workflow from setup through publication. Learn design best practices, working with Claude Code skills, and publishing to GitHub Pages and PDF.
 
-**2. Content Request Templates**::
-Use structured templates to request content from Claude Code, ensuring consistent depth, quality, and integration. Includes complete examples for different content types (installations, architecture, troubleshooting).
+**Section 2: Content Request Templates**::
+Use structured templates to request content from Claude Code, ensuring consistent depth, quality, and integration across all course sections.
 
-**3. Writing Style Standards**::
-Master the three-layer depth approach (WHY/WHAT/HOW), example patterns, code conventions, and production guidance styles. Learn how to write concrete scenarios, decision matrices, and transitions.
+**Section 3: Writing Style Standards**::
+Apply the three-layer depth approach (WHY/WHAT/HOW), example patterns, code conventions, and production guidance styles.
 
-**4. Terminology Consistency**::
-Maintain canonical term definitions across your course using TERMINOLOGY.md. Learn when to add terms, how to reference prior definitions, and maintain consistency across chapters.
+**Section 4: Terminology Consistency**::
+Maintain canonical term definitions across your course using TERMINOLOGY.md. Ensure consistency across chapters and avoid definition drift.
 
-**5. Fresh Session Workflow**::
-Work with Claude Code across multiple sessions while maintaining consistency and quality. Includes fresh prompt templates, integration tracking, and techniques for avoiding common pitfalls.
+**Section 5: Fresh Session Workflow**::
+Work effectively across multiple Claude Code sessions while maintaining consistency and quality. Includes fresh prompt templates and integration tracking.
 
-== Success Stories
+== The QuickCourse Advantage
 
-This workflow has been used to create:
+Traditional course development often takes 2-4 weeks for a basic course with manual setup, repetitive structure creation, and formatting overhead.
 
-* **100+ workshop modules** for Red Hat Showroom
-* **QuickCourses** for OpenShift, Ansible, AI, and more
-* **Enablement content** completed in days instead of weeks
-* **Consistent, high-quality** courses across multiple teams
+With the QuickCourse workflow and Claude Code, you can reduce time to first draft to as little as 1-2 weeks through automated setup, generated structure, and Claude-assisted writing—letting you focus on content, not formatting.
 
-== Let's Get Started
+== Let's Begin
 
-Ready to create your first QuickCourse? Continue to the QuickCourse Workflow guide to begin.
+Ready to create your first QuickCourse? Continue to Section 1 to start with the QuickCourse Generation Workflow.

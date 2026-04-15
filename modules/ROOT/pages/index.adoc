@@ -1,27 +1,97 @@
-= An Example Quick Course
+= Claude Skills Course
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+Welcome to the **Claude Skills Course** - a comprehensive, hands-on learning path for mastering Claude Code and building custom skills for content automation.
 
-Description:
-Course description FIXME
+This course teaches you how to effectively use Claude Code, Anthropic's official CLI tool, and how to create powerful, reusable skills that automate course development, documentation generation, and technical content creation.
 
-Duration: FIXME hours
+**Who This Course Is For:**
 
-== Objectives
+* Content developers creating training materials and workshops
+* Technical instructors building enablement content
+* Developer advocates and solution architects
+* Subject matter experts converting knowledge into courses
+* Anyone who wants to leverage AI-assisted development for content creation
 
-On completing this course, you should be able to:
+**Course Value:**
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+By the end of this course, you'll be able to design and build production-quality Claude Code skills, create complete Red Hat QuickCourses, and apply proven patterns used in real-world content automation workflows.
+
+== Course Objectives
+
+On completing this course, you will be able to:
+
+* Launch and effectively use Claude Code in your terminal and repositories
+* Understand when to use skills versus conversational prompts
+* Design and build custom Claude Code skills with proper structure
+* Implement sequential workflows with quality gates and validation
+* Manage token budgets and control output verbosity
+* Create complete Red Hat QuickCourses using the 5-phase workflow
+* Apply content request templates for consistent depth and quality
+* Maintain terminology consistency across multi-chapter content
+* Work effectively across multiple Claude Code sessions
+* Leverage real production skills and battle-tested patterns
+
+== Course Modules
+
+This course consists of three progressive modules:
+
+**Module 1: Introduction to Claude Code (Claude Basics)**::
+Learn the fundamentals of Claude Code including how to launch and navigate the tool, the difference between skills and prompts, working in git repositories, and effective prompting techniques. Includes session management and best practices.
++
+*Duration:* ~2 hours
+
+**Module 2: Building Claude Skills (Skill Building)**::
+Master the complete skill development lifecycle across 7 comprehensive sections. Topics include skill anatomy and file structure, sequential workflow design, token management and output control, quality gates and validation, reference materials and templates, real-world production examples, and best practices.
++
+*Duration:* ~4 hours
+
+**Module 3: Creating Red Hat QuickCourses (Course Creation)**::
+Learn the proven 5-phase workflow for creating complete courses on any Red Hat product or platform. Covers the QuickCourse generation workflow, content request templates, writing style standards, terminology consistency techniques, and fresh session workflow strategies.
++
+*Duration:* ~3 hours
+
+**Total Course Duration:** Approximately 9-10 hours
 
 == Prerequisites
 
-This course assumes that you have the following prior experience:
+Before starting this course, you should have:
 
-* Course or experience...
-* Course or experience...
-* Course or experience...
+* Claude Code installed on your system
+* Basic familiarity with command-line interfaces
+* Git and GitHub knowledge
+* A code editor (VS Code, vim, etc.)
+* Basic understanding of AsciiDoc or Markdown (helpful but not required)
+
+== What Makes This Course Unique
+
+This course stands out because it's built from **real, production skills** actively used in Red Hat's enablement ecosystem:
+
+* **Battle-tested patterns** - Skills that have generated hundreds of workshop modules
+* **Proven at scale** - Token management strategies and workflows refined through actual production use
+* **Practical focus** - Real examples from the Showroom ecosystem, not just theory
+* **Hands-on approach** - You'll analyze actual skills and apply patterns immediately
+
+== How to Navigate This Course
+
+We recommend completing the modules in order, as each builds on concepts from the previous:
+
+1. **Start with Claude Basics** if you're new to Claude Code
+2. **Progress to Skill Building** to learn skill development
+3. **Finish with Course Creation** to apply everything you've learned
+
+Each module contains multiple sections with hands-on examples and practical exercises.
+
+== Resources Included
+
+This course repository includes:
+
+* **Custom Skills** - 13+ production skills in `.agents/skills/`
+* **Prompts** - Reusable prompt templates in `prompts/`
+* **Templates** - Content templates for labs, presentations, and quizzes in `templates/`
+
+== Let's Get Started
+
+Ready to begin? Proceed to the first module: **Introduction to Claude Code** to start your journey into effective Claude Code usage and skill development.
