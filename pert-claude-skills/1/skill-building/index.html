@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Building Claude Skills for Course Development :: Claude Skills Course</title>
+    <link rel="prev" href="../claude-basics/04-effective-prompting.html">
+    <link rel="next" href="01-skill-anatomy.html">
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">Claude Skills Course</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="pert-claude-skills" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Claude Skills Course</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../claude-basics/index.html">Introduction to Claude Code</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../claude-basics/01-getting-started.html">Getting Started with Claude Code</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../claude-basics/02-skills-vs-prompts.html">Skills vs. Conversational Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../claude-basics/03-working-in-repos.html">Working in Git Repositories</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../claude-basics/04-effective-prompting.html">Effective Prompting Techniques</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Building Claude Skills</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="01-skill-anatomy.html">Module 1: Skill Anatomy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-workflow-design.html">Module 2: Workflow Design</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="03-token-management.html">Module 3: Token Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="04-quality-gates.html">Module 4: Quality Gates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="05-references-templates.html">Module 5: References &amp; Templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="06-real-examples.html">Module 6: Real Examples</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="07-best-practices.html">Module 7: Best Practices</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../course-creation/index.html">Creating Red Hat QuickCourses</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../course-creation/01-quickcourse-workflow.html">The QuickCourse Generation Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../course-creation/02-content-request-template.html">Content Request Template</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../course-creation/03-writing-style-standards.html">Writing Style Standards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../course-creation/04-terminology-consistency.html">Terminology Consistency</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../course-creation/05-fresh-session-workflow.html">Fresh Session Workflow</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Claude Skills Course</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Claude Skills Course</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Claude Skills Course</a></li>
+    <li><a href="index.html">Building Claude Skills</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Building Claude Skills for Course Development</h1>
+<div class="sect1">
+<h2 id="_course_overview"><a class="anchor" href="#_course_overview"></a>Course Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Welcome to the comprehensive guide for building Claude skills designed for course development, demos, labs, and technical content creation.</p>
+</div>
+<div class="paragraph">
+<p>This course teaches you how to create powerful, reusable Claude Code skills that automate content generation workflows while maintaining high quality standards.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_youll_learn"><a class="anchor" href="#_what_youll_learn"></a>What You&#8217;ll Learn</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By completing this course, you will be able to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Understand skill anatomy</strong> - Master the structure of Claude skill files including frontmatter, metadata, and context modes</p>
+</li>
+<li>
+<p><strong>Design effective workflows</strong> - Create sequential, conversational workflows that guide users through complex tasks</p>
+</li>
+<li>
+<p><strong>Manage token budgets</strong> - Control output size and prevent token overflow in generated content</p>
+</li>
+<li>
+<p><strong>Implement quality gates</strong> - Build inline validation and quality checks into your skills</p>
+</li>
+<li>
+<p><strong>Leverage templates and references</strong> - Use external files and shared rules to maintain consistency</p>
+</li>
+<li>
+<p><strong>Apply best practices</strong> - Follow proven patterns and avoid common pitfalls in skill development</p>
+</li>
+<li>
+<p><strong>Analyze real examples</strong> - Study production skills from the Showroom ecosystem</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_who_this_is_for"><a class="anchor" href="#_who_this_is_for"></a>Who This Is For</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This course is designed for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Content developers</strong> creating training materials, workshops, and demonstrations</p>
+</li>
+<li>
+<p><strong>Developer advocates</strong> building technical enablement content</p>
+</li>
+<li>
+<p><strong>Solution architects</strong> automating documentation and demo creation</p>
+</li>
+<li>
+<p><strong>DevOps engineers</strong> streamlining lab and course generation workflows</p>
+</li>
+<li>
+<p><strong>Anyone</strong> who wants to understand Claude skill development patterns</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before starting this course, you should have:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Basic understanding of Claude Code and how skills work</p>
+</li>
+<li>
+<p>Familiarity with AsciiDoc or Markdown</p>
+</li>
+<li>
+<p>Experience with command-line tools</p>
+</li>
+<li>
+<p>Understanding of course/workshop structure (helpful but not required)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_module_structure"><a class="anchor" href="#_module_structure"></a>Module Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This module is organized into seven sections:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Module 1: Skill Anatomy</strong></dt>
+<dd>
+<p>Learn the fundamental structure of Claude skills, including file organization, frontmatter configuration, and metadata.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 2: Sequential Workflow Design</strong></dt>
+<dd>
+<p>Master the art of creating conversational workflows that ask questions sequentially and build context progressively.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 3: Token Management and Output Control</strong></dt>
+<dd>
+<p>Understand how to manage Claude&#8217;s output token budget and prevent overwhelming users with verbose responses.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 4: Quality Gates and Validation</strong></dt>
+<dd>
+<p>Implement inline quality checks and validation patterns to ensure generated content meets standards.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 5: Reference Materials and Templates</strong></dt>
+<dd>
+<p>Leverage external reference files, templates, and shared rules to maintain consistency across skills.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 6: Real-World Examples</strong></dt>
+<dd>
+<p>Analyze production skills from the Showroom ecosystem including lab creation, demo generation, and blog writing.</p>
+</dd>
+<dt class="hdlist1"><strong>Module 7: Best Practices and Anti-Patterns</strong></dt>
+<dd>
+<p>Learn proven patterns, avoid common mistakes, and optimize your skills for production use.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_makes_this_course_unique"><a class="anchor" href="#_what_makes_this_course_unique"></a>What Makes This Course Unique</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This course is built from <strong>real, production skills</strong> actively used in Red Hat&#8217;s enablement ecosystem:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Skills that generate hundreds of workshop modules</p>
+</li>
+<li>
+<p>Battle-tested patterns for content quality</p>
+</li>
+<li>
+<p>Token management strategies proven at scale</p>
+</li>
+<li>
+<p>Workflows refined through actual user feedback</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll learn not just theory, but <strong>practical patterns</strong> you can apply immediately.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lets_get_started"><a class="anchor" href="#_lets_get_started"></a>Let&#8217;s Get Started</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ready to build powerful Claude skills? Click through to Module 1 to begin your journey.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../claude-basics/04-effective-prompting.html">Effective Prompting Techniques</a></span>
+  <span class="next"><a href="01-skill-anatomy.html">Module 1: Skill Anatomy</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
