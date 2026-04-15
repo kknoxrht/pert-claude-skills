@@ -41,19 +41,19 @@ This course consists of three progressive modules:
 **Module 1: Introduction to Claude Code (Claude Basics)**::
 Learn the fundamentals of Claude Code including how to launch and navigate the tool, the difference between skills and prompts, working in git repositories, and effective prompting techniques. Includes session management and best practices.
 +
-*Duration:* ~2 hours
+*Duration:* ~1 hours
 
 **Module 2: Building Claude Skills (Skill Building)**::
 Master the complete skill development lifecycle across 7 comprehensive sections. Topics include skill anatomy and file structure, sequential workflow design, token management and output control, quality gates and validation, reference materials and templates, real-world production examples, and best practices.
 +
-*Duration:* ~4 hours
+*Duration:* ~1 hours
 
 **Module 3: Creating Red Hat QuickCourses (Course Creation)**::
 Learn the proven 5-phase workflow for creating complete courses on any Red Hat product or platform. Covers the QuickCourse generation workflow, content request templates, writing style standards, terminology consistency techniques, and fresh session workflow strategies.
 +
-*Duration:* ~3 hours
+*Duration:* ~1 hours
 
-**Total Course Duration:** Approximately 9-10 hours
+**Total Course Duration:** Approximately 3-4 hours
 
 == Prerequisites
 
